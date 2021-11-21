@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.TP_Spring_Client.controllers.MainController">
+   <Label text="Gestion des  Films" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="20.0" />
+      </VBox.margin>
+   </Label>
+   <HBox alignment="CENTER">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onAddClick" text="Ajouter un film" />
+         <Button mnemonicParsing="false" onAction="#onSearchClick" text="Chercher un film">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets bottom="10.0" />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="CENTER">
+      <children>
+         <Button mnemonicParsing="false" onAction="#onDeleteClick" text="Supprimer un film" />
+         <Button mnemonicParsing="false" onAction="#onModifyClick" text="Modifier un film">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+   </HBox>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
